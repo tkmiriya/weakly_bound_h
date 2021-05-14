@@ -6,22 +6,19 @@ class Kcot_luscher(object):
     """
     Calculate the scattering phase shifts using finite volume formula
     """
-    def __init__(self, L, m_1, m_2, m_pi, d=[0,0,0]):
+    def __init__(self, L, m_1, m_2, d=[0,0,0]):
         """
         Input parameters
         L : int.
             length of the box in lattice unit
         m_1 (m_2) : float
             mass of the particle in lattice unit
-        m_pi : float
-            pion mass (reference scale) in lattice unit
         d : list
             boosted momentum ex. d=[1,0,0], d=[2,0,0]
         """
         self.L = L
-        self.m_1  = m_2 # in lattice unit
-        self.m_2  = m_1 # in lattice unit
-        self.m_pi = m_pi # in lattice unit
+        self.m_1  = m_1 # in lattice unit
+        self.m_2  = m_2 # in lattice unit
 
         self.d = d
         self.z00 = Luscher_zeta(L, d)
@@ -36,41 +33,35 @@ class Kcot_luscher(object):
 
     def kcot(self, k2):
         """
-        Return kcot/mpi
+        Return kcot (in lattice unit)
 
         Input parameter 
         k2 : float (in lattice unit)
         """
-        if self.L == 'inf':
-            return ( -  np.sqrt(-k2))
-
         if self.d == [0,0,0]:
             gamma_val = 1.0
             z00 = self.z00.z00(k2)
         else:
             gamma_val = self.gamma(k2, self.d, self.L)
             z00 = self.z00.z00d(k2, gamma_val)
-        return 2.0*z00/(self.L*np.sqrt(np.pi))/gamma_val/self.m_pi
+        return 2.0*z00/(self.L*np.sqrt(np.pi))/gamma_val
 
     def kcot_from_dE(self, deltaE):
         """
-        Return kcot/mpi
+        Return kcot (in lattice unit)
 
         Input parameter 
         delta_E : float (in lattice unit)
             energy shift delta E
         """
         k2 = self.tok2(deltaE)
-        if self.L == 'inf':
-            return ( -  np.sqrt(-k2))
-
         if self.d == [0,0,0]:
             gamma_val = 1.0
             z00 = self.z00.z00(k2)
         else:
             gamma_val = self.gamma(k2, self.d, self.L)
             z00 = self.z00.z00d(k2, gamma)
-        return 2.0*z00/(self.L*np.sqrt(np.pi))/gamma_val/self.m_pi
+        return 2.0*z00/(self.L*np.sqrt(np.pi))/gamma_val
 
 
     def tok2(self, deltaE):
