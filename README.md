@@ -27,6 +27,10 @@ Interactive plots are also available.
 
 ![plotly figure](figs/pcot_vs_p2/plotly_pcot_vs_p2_sample.png)
 
+The relation between negative squared momentum vs B.E.
+for baryon mass 1.2 GeV and pion mass 420 MeV.
+![BE](figs/../notebook/BE_vs_p_square.png)
+
 ## $L = 3.1$ fm
 * $a = 0.0642$ fm
 
