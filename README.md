@@ -6,15 +6,17 @@ J. R. Green, A. D. Hanlon, P. M. Junnarkar, H. Wittig,  [arXiv:2103.01054](https
 
 # Gauge configurations
 
-|Label | Nf | L | a [fm] | La [fm] |
-|------|----|---|--------|---------|
-| N300 | 3  | 48| 0.0498 | 2.4     |
-| N202 | 3  | 48| 0.0642 | 3.1     |
-| H200 | 3  | 32| 0.0642 | 2.1     |
-| B450 | 3  | 32| 0.0762 | 2.4     |
-| H101 | 3  | 32| 0.0865 | 2.8     |
-| U103 | 3  | 24| 0.0865 | 2.1     |
-| A653 | 3  | 24| 0.0992 | 2.4     |
+|Label | Nf | L | a [fm] | La [fm] |  m_pi [MeV] |
+|------|----|---|--------|---------|-------------|
+| N300 | 3  | 48| 0.0498 | 2.4     | 422         |
+| N202 | 3  | 48| 0.0642 | 3.1     | 412         |
+| H200 | 3  | 32| 0.0642 | 2.1     | 419         |
+| B450 | 3  | 32| 0.0762 | 2.4     | 417         |
+| H101 | 3  | 32| 0.0865 | 2.8     | 417         |
+| U103 | 3  | 24| 0.0865 | 2.1     | 414         |
+| A653 | 3  | 24| 0.0992 | 2.4     | 424         |
+| E5   | 2  | 32| 0.0658 | 2.1     | 436         |
+| E1   | 2  | 32| 0.0658 | 2.1     | 978         |
 
 ![SU3 conf.](figs/SU3_ensembles.png)
 
@@ -70,3 +72,14 @@ Interactive plots are also available.
 ![U103 ensemble](figs/energy_levels/U103_spin_zero.png)
 ![U103 ensemble](figs/pcot_vs_p2/U103_pcot_vs_p2.png)
 ![U103 ensemble](figs/pcot_vs_p2/U103_pcot_vs_p2_neg.png)
+
+
+## Nf = 2
+
+![E5 ensemble](figs/energy_levels/E5_spin_zero.png)
+![E5 ensemble](figs/pcot_vs_p2/E5_pcot_vs_p2.png)
+![E5 ensemble](figs/pcot_vs_p2/E5_pcot_vs_p2_neg.png)
+
+![E1 ensemble](figs/energy_levels/E1_spin_zero.png)
+![E1 ensemble](figs/pcot_vs_p2/E1_pcot_vs_p2.png)
+![E1 ensemble](figs/pcot_vs_p2/E1_pcot_vs_p2_neg.png)
