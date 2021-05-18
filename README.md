@@ -4,6 +4,24 @@ This repository is a supplementary analysis of the finite volume method in latti
 based on the data from "Weakly bound H dibaryon from SU(3)-flavor-symmetric QCD", 
 J. R. Green, A. D. Hanlon, P. M. Junnarkar, H. Wittig,  [arXiv:2103.01054](https://arxiv.org/abs/2103.01054).
 
+- [H dibaryon from lattice QCD](#h-dibaryon-from-lattice-qcd)
+- [To Do List](#to-do-list)
+- [Gauge configurations](#gauge-configurations)
+- [Energy levels & $p\cot\delta$ vs $p^2$](#energy-levels--pcotdelta-vs-p2)
+  - [$L = 3.1$ fm](#l--31-fm)
+  - [$L = 2.8$ fm](#l--28-fm)
+  - [$L = 2.4$ fm](#l--24-fm)
+  - [$L = 2.1$ fm](#l--21-fm)
+  - [Nf = 2](#nf--2)
+- [Summary of phase shifts](#summary-of-phase-shifts)
+  - [$La$ : fixed](#la--fixed)
+  - [$a$ : fixed](#a--fixed)
+
+# To Do List
+- [ ] ERE fitting & binding energy
+- [ ] Consistency check between root mean square distance of a shallow bound state and a finite volume box
+- [ ] Square well potential demo & finite volume method from eigenvalues
+
 # Gauge configurations
 
 |Label | Nf | L | a [fm] | La [fm] |  m_pi [MeV] |
@@ -87,3 +105,20 @@ for baryon mass 1.2 GeV and pion mass 420 MeV.
 ![E1 ensemble](figs/energy_levels/E1_spin_zero.png)
 ![E1 ensemble](figs/pcot_vs_p2/E1_pcot_vs_p2.png)
 ![E1 ensemble](figs/pcot_vs_p2/E1_pcot_vs_p2_neg.png)
+
+
+# Summary of phase shifts
+
+## $La$ : fixed
+![Fixed volume](figs/pcot_vs_p2/pcot_vs_p2_La_2_2fm.png)
+![Fixed volume](figs/pcot_vs_p2/pcot_vs_p2_La_2_2fm_neg.png)
+
+![Fixed volume](figs/pcot_vs_p2/pcot_vs_p2_La_2_4fm.png)
+![Fixed volume](figs/pcot_vs_p2/pcot_vs_p2_La_2_4fm_neg.png)
+
+## $a$ : fixed
+![Fixed cutoff](figs/pcot_vs_p2/pcot_vs_p2_lat_spacing_00642fm.png)
+![Fixed cutoff](figs/pcot_vs_p2/pcot_vs_p2_lat_spacing_00642fm_neg.png)
+
+![Fixed cutoff](figs/pcot_vs_p2/pcot_vs_p2_lat_spacing_00865fm.png)
+![Fixed cutoff](figs/pcot_vs_p2/pcot_vs_p2_lat_spacing_00865fm_neg.png)
