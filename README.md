@@ -8,6 +8,7 @@ J. R. Green, A. D. Hanlon, P. M. Junnarkar, H. Wittig,  [arXiv:2103.01054](https
 - [To Do List](#to-do-list)
 - [Gauge configurations](#gauge-configurations)
 - [Energy levels & $p\cot\delta$ vs $p^2$](#energy-levels--pcotdelta-vs-p2)
+  - [Effective Range Expansion (ERE) analysis (NLO)](#effective-range-expansion-ere-analysis-nlo)
   - [$L = 3.1$ fm](#l--31-fm)
   - [$L = 2.8$ fm](#l--28-fm)
   - [$L = 2.4$ fm](#l--24-fm)
@@ -51,6 +52,13 @@ Interactive plots are also available.
 The relation between negative squared momentum vs B.E.
 for baryon mass 1.2 GeV and pion mass 420 MeV.
 ![BE](figs/../notebook/BE_vs_p_square.png)
+
+## Effective Range Expansion (ERE) analysis (NLO)
+
+$a_0$: scattering length
+$r_\mathrm{eff}$: effective range
+
+$k\cot\delta = 1/a_0 + \frac{1}{2}r_\mathrm{eff}k^2$
 
 ## $L = 3.1$ fm
 * $a = 0.0642$ fm
