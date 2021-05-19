@@ -18,7 +18,8 @@ J. R. Green, A. D. Hanlon, P. M. Junnarkar, H. Wittig,  [arXiv:2103.01054](https
   - [$a$ : fixed](#a--fixed)
 
 # To Do List
-- [ ] ERE fitting & binding energy
+- [X] ERE fitting & binding energy
+- [ ] Check imaginary (?) state P011, P111 first excited state versus ERE
 - [ ] Consistency check between root mean square distance of a shallow bound state and a finite volume box
 - [ ] Square well potential demo & finite volume method from eigenvalues
 
@@ -38,6 +39,8 @@ J. R. Green, A. D. Hanlon, P. M. Junnarkar, H. Wittig,  [arXiv:2103.01054](https
 
 ![SU3 conf.](figs/SU3_ensembles.png)
 
+![SU3 BE summary](figs/BE_summary_Nf3.png)
+
 # Energy levels & $p\cot\delta$ vs $p^2$
 
 Interactive plots are also available.
@@ -55,6 +58,8 @@ for baryon mass 1.2 GeV and pion mass 420 MeV.
 ![N202 ensemble](figs/energy_levels/N202_spin_zero.png)
 ![N202 ensemble](figs/pcot_vs_p2/N202_pcot_vs_p2.png)
 ![N202 ensemble](figs/pcot_vs_p2/N202_pcot_vs_p2_neg.png)
+![N202 ensemble](figs/ERE/N202_ERE_parameter.png)
+![N202 ensemble](figs/ERE/N202_pcot_vs_p2_ERE_fit.png)
 
 ## $L = 2.8$ fm
 * $a = 0.0865$ fm
@@ -62,6 +67,8 @@ for baryon mass 1.2 GeV and pion mass 420 MeV.
 ![H101 ensemble](figs/energy_levels/H101_spin_zero.png)
 ![H101 ensemble](figs/pcot_vs_p2/H101_pcot_vs_p2.png)
 ![H101 ensemble](figs/pcot_vs_p2/H101_pcot_vs_p2_neg.png)
+![H101 ensemble](figs/ERE/H101_ERE_parameter.png)
+![H101 ensemble](figs/ERE/H101_pcot_vs_p2_ERE_fit.png)
 
 ## $L = 2.4$ fm
 * $a = 0.0498$ fm
@@ -69,18 +76,26 @@ for baryon mass 1.2 GeV and pion mass 420 MeV.
 ![N300 ensemble](figs/energy_levels/N300_spin_zero.png)
 ![N300 ensemble](figs/pcot_vs_p2/N300_pcot_vs_p2.png)
 ![N300 ensemble](figs/pcot_vs_p2/N300_pcot_vs_p2_neg.png)
+![N300 ensemble](figs/ERE/N300_ERE_parameter.png)
+![N300 ensemble](figs/ERE/N300_pcot_vs_p2_ERE_fit.png)
+![N300 ensemble](figs/ERE/N300_pcot_vs_p2_ERE_fit_neg.png)
 
 * $a = 0.0762$ fm
 
 ![B450 ensemble](figs/energy_levels/B450_spin_zero.png)
 ![B450 ensemble](figs/pcot_vs_p2/B450_pcot_vs_p2.png)
 ![B450 ensemble](figs/pcot_vs_p2/B450_pcot_vs_p2_neg.png)
+![B450 ensemble](figs/ERE/B450_ERE_parameter.png)
+![B450 ensemble](figs/ERE/B450_pcot_vs_p2_ERE_fit.png)
+![B450 ensemble](figs/ERE/B450_pcot_vs_p2_ERE_fit_neg.png)
 
 * $a = 0.0992$ fm
 
 ![A653 ensemble](figs/energy_levels/A653_spin_zero.png)
 ![A653 ensemble](figs/pcot_vs_p2/A653_pcot_vs_p2.png)
 ![A653 ensemble](figs/pcot_vs_p2/A653_pcot_vs_p2_neg.png)
+![A653 ensemble](figs/ERE/A653_ERE_parameter.png)
+![A653 ensemble](figs/ERE/A653_pcot_vs_p2_ERE_fit.png)
 
 ## $L = 2.1$ fm
 * $a = 0.0642$ fm
@@ -88,13 +103,19 @@ for baryon mass 1.2 GeV and pion mass 420 MeV.
 ![H200 ensemble](figs/energy_levels/H200_spin_zero.png)
 ![H200 ensemble](figs/pcot_vs_p2/H200_pcot_vs_p2.png)
 ![H200 ensemble](figs/pcot_vs_p2/H200_pcot_vs_p2_neg.png)
+![H200 ensemble](figs/pcot_vs_p2/H200_pcot_vs_p2_neg.png)
+![H200 ensemble](figs/ERE/H200_ERE_parameter.png)
+![H200 ensemble](figs/ERE/H200_pcot_vs_p2_ERE_fit.png)
+![H200 ensemble](figs/ERE/H200_pcot_vs_p2_ERE_fit_neg.png)
 
 * $a = 0.0865$ fm
 
 ![U103 ensemble](figs/energy_levels/U103_spin_zero.png)
 ![U103 ensemble](figs/pcot_vs_p2/U103_pcot_vs_p2.png)
 ![U103 ensemble](figs/pcot_vs_p2/U103_pcot_vs_p2_neg.png)
-
+![H200 ensemble](figs/ERE/H200_ERE_parameter.png)
+![H200 ensemble](figs/ERE/H200_pcot_vs_p2_ERE_fit.png)
+![H200 ensemble](figs/ERE/H200_pcot_vs_p2_ERE_fit_neg.png)
 
 ## Nf = 2
 
