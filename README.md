@@ -111,7 +111,6 @@ $k\cot\delta = 1/a_0 + \frac{1}{2}r_\mathrm{eff}k^2$
 ![H200 ensemble](figs/energy_levels/H200_spin_zero.png)
 ![H200 ensemble](figs/pcot_vs_p2/H200_pcot_vs_p2.png)
 ![H200 ensemble](figs/pcot_vs_p2/H200_pcot_vs_p2_neg.png)
-![H200 ensemble](figs/pcot_vs_p2/H200_pcot_vs_p2_neg.png)
 ![H200 ensemble](figs/ERE/H200_ERE_parameter.png)
 ![H200 ensemble](figs/ERE/H200_pcot_vs_p2_ERE_fit.png)
 ![H200 ensemble](figs/ERE/H200_pcot_vs_p2_ERE_fit_neg.png)
@@ -121,9 +120,9 @@ $k\cot\delta = 1/a_0 + \frac{1}{2}r_\mathrm{eff}k^2$
 ![U103 ensemble](figs/energy_levels/U103_spin_zero.png)
 ![U103 ensemble](figs/pcot_vs_p2/U103_pcot_vs_p2.png)
 ![U103 ensemble](figs/pcot_vs_p2/U103_pcot_vs_p2_neg.png)
-![H200 ensemble](figs/ERE/H200_ERE_parameter.png)
-![H200 ensemble](figs/ERE/H200_pcot_vs_p2_ERE_fit.png)
-![H200 ensemble](figs/ERE/H200_pcot_vs_p2_ERE_fit_neg.png)
+![U103 ensemble](figs/ERE/U103_ERE_parameter.png)
+![U103 ensemble](figs/ERE/U103_pcot_vs_p2_ERE_fit.png)
+![U103 ensemble](figs/ERE/U103_pcot_vs_p2_ERE_fit_neg.png)
 
 ## Nf = 2
 
