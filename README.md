@@ -40,7 +40,15 @@ J. R. Green, A. D. Hanlon, P. M. Junnarkar, H. Wittig,  [arXiv:2103.01054](https
 
 ![SU3 conf.](figs/SU3_ensembles.png)
 
+Summary of binding energies and its cutoff/volume dependence.
 ![SU3 BE summary](figs/BE_summary_Nf3.png)
+
+* These binding energies are obtained as follows.
+
+1. Calculate the scattering phase shifts $\delta$ of level = 0 states for P000, P001, P011, P111 and P002 frames with total spin zero. The errors are estimated from 95CI of bootstrap samples.
+2. Fit these 5 point using NLO ERE (next leading order effective range expansion) with the finite volume formula constraints correctly.
+3. Measure the intersection between NLO ERE and binding state condition $-\sqrt{-k^2}$, which can be converted into the binding energy.
+4. Take continuum limit.
 
 # Energy levels & $p\cot\delta$ vs $p^2$
 
@@ -55,10 +63,15 @@ for baryon mass 1.2 GeV and pion mass 420 MeV.
 
 ## Effective Range Expansion (ERE) analysis (NLO)
 
+NLO order ERE fitting
+$k\cot\delta = 1/a_0 + \frac{1}{2}r_\mathrm{eff}k^2$
+
 $a_0$: scattering length
 $r_\mathrm{eff}$: effective range
 
-$k\cot\delta = 1/a_0 + \frac{1}{2}r_\mathrm{eff}k^2$
+* For fitting, we employ 5 data points ($n = 0$ level spectra 
+for P000, P001, P011, P111 and P200 frames with total spin zero.
+* We take into account the finite volume constraints correctly.
 
 ## $L = 3.1$ fm
 * $a = 0.0642$ fm
