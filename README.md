@@ -17,12 +17,14 @@ J. R. Green, A. D. Hanlon, P. M. Junnarkar, H. Wittig,  [arXiv:2103.01054](https
 - [Summary of phase shifts](#summary-of-phase-shifts)
   - [$La$ : fixed](#la--fixed)
   - [$a$ : fixed](#a--fixed)
+- [First excited state consistency](#first-excited-state-consistency)
 
 # To Do List
 - [X] ERE fitting & binding energy
-- [ ] Check imaginary (?) state P011, P111 first excited state versus ERE
+- [X] Check imaginary (?) state P011, P111 first excited state versus ERE
 - [ ] Consistency check between root mean square distance of a shallow bound state and a finite volume box
 - [ ] Square well potential demo & finite volume method from eigenvalues
+- [ ] HAL potential inside a small box
 
 # Gauge configurations
 
@@ -59,7 +61,7 @@ Interactive plots are also available.
 
 The relation between negative squared momentum vs B.E.
 for baryon mass 1.2 GeV and pion mass 420 MeV.
-![BE](figs/../notebook/BE_vs_p_square.png)
+![BE](figs/BE_vs_p_square.png)
 
 ## Effective Range Expansion (ERE) analysis (NLO)
 
@@ -163,3 +165,17 @@ for P000, P001, P011, P111 and P200 frames with total spin zero.
 
 ![Fixed cutoff](figs/pcot_vs_p2/pcot_vs_p2_lat_spacing_00865fm.png)
 ![Fixed cutoff](figs/pcot_vs_p2/pcot_vs_p2_lat_spacing_00865fm_neg.png)
+
+
+# First excited state consistency
+
+ERE fitting using first excited states for P000 and P001, which works well.
+![First excited state for N202](figs/first_excited_state/N202_p2_vs_pcot_with_ERE.png)
+![First excited state for N202](figs/first_excited_state/N202_p2_vs_pcot_with_ERE_neg.png)
+![First excited state for N202](figs/first_excited_state/N202_ERE_param_with_P000_1_P001_1.png)
+
+However, observed first excited states for P011 and P111 frames show large discrepancy
+between ERE.
+![First excited state for N202](figs/first_excited_state/N202_p2_vs_pcot_with_ERE_plus_excited_state_intersection.png)
+![First excited state for N202](figs/first_excited_state/N202_P011_plus_P111_1st_excited_state_spectra.png)
+
