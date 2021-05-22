@@ -18,6 +18,7 @@ J. R. Green, A. D. Hanlon, P. M. Junnarkar, H. Wittig,  [arXiv:2103.01054](https
   - [$La$ : fixed](#la--fixed)
   - [$a$ : fixed](#a--fixed)
 - [First excited state consistency](#first-excited-state-consistency)
+- [Finite volume potential](#finite-volume-potential)
 
 # To Do List
 - [X] ERE fitting & binding energy
@@ -179,3 +180,12 @@ between ERE.
 ![First excited state for N202](figs/first_excited_state/N202_p2_vs_pcot_with_ERE_plus_excited_state_intersection.png)
 ![First excited state for N202](figs/first_excited_state/N202_P011_plus_P111_1st_excited_state_spectra.png)
 
+
+# Finite volume potential
+
+![Finite volume potential](figs/hal_pot_finite_volume/su3_mpi837MeV_1rep_pot.png)
+
+![Finite volume potential](figs/hal_pot_finite_volume/finite_volume_potential.png)
+
+![Finite volume potential](figs/hal_pot_finite_volume/su3_mpi837MeV_kcot_vs_k2_L_dep.png)
+![Finite volume potential](figs/hal_pot_finite_volume/su3_mpi837MeV_kcot_vs_k2_L_dep_neg.png)
