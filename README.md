@@ -189,3 +189,8 @@ between ERE.
 
 ![Finite volume potential](figs/hal_pot_finite_volume/su3_mpi837MeV_kcot_vs_k2_L_dep.png)
 ![Finite volume potential](figs/hal_pot_finite_volume/su3_mpi837MeV_kcot_vs_k2_L_dep_neg.png)
+
+
+![Finite volume potential](figs/hal_pot_finite_volume/pot_in_coarse_lattice.png)
+![Finite volume potential](figs/hal_pot_finite_volume/kcot_vs_k2_lattice_spacing_dependence.png)
+
