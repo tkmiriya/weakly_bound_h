@@ -43,13 +43,13 @@ J. R. Green, A. D. Hanlon, P. M. Junnarkar, H. Wittig,  [arXiv:2103.01054](https
 
 ![SU3 conf.](figs/SU3_ensembles.png)
 
-Summary of binding energies and its cutoff/volume dependence.
+Summary of binding energies and their cutoff/volume dependence.
 ![SU3 BE summary](figs/BE_summary_Nf3.png)
 
 * These binding energies are obtained as follows.
 
-1. Calculate the scattering phase shifts $\delta$ of level = 0 states for P000, P001, P011, P111 and P002 frames with total spin zero. The errors are estimated from 95CI of bootstrap samples.
-2. Fit these 5 point using NLO ERE (next leading order effective range expansion) with the finite volume formula constraints correctly.
+1. Calculate the scattering phase shifts $\delta$ of level = 0 states for P000, P001, P011, P111 and P002 frames with total spin-zero. The errors are estimated from 95CI of bootstrap samples.
+2. Fit these 5 points using NLO ERE (next leading order effective range expansion) with the finite volume formula constraints correctly.
 3. Measure the intersection between NLO ERE and binding state condition $-\sqrt{-k^2}$, which can be converted into the binding energy.
 4. Take continuum limit.
 
@@ -72,8 +72,7 @@ $k\cot\delta = 1/a_0 + \frac{1}{2}r_\mathrm{eff}k^2$
 $a_0$: scattering length
 $r_\mathrm{eff}$: effective range
 
-* For fitting, we employ 5 data points ($n = 0$ level spectra 
-for P000, P001, P011, P111 and P200 frames with total spin zero.
+* For the fitting, we employ 5 data points ($n = 0$ level spectra for P000, P001, P011, P111, and P200 frames with total spin-zero.
 * We take into account the finite volume constraints correctly.
 
 ## $L = 3.1$ fm
@@ -175,22 +174,48 @@ ERE fitting using first excited states for P000 and P001, which works well.
 ![First excited state for N202](figs/first_excited_state/N202_p2_vs_pcot_with_ERE_neg.png)
 ![First excited state for N202](figs/first_excited_state/N202_ERE_param_with_P000_1_P001_1.png)
 
-However, observed first excited states for P011 and P111 frames show large discrepancy
-between ERE.
+However, observed first excited states for P011 and P111 frames 
+show a large discrepancy between ERE. 
+The expected energy shifts from ERE are shown in down-triangle.
 ![First excited state for N202](figs/first_excited_state/N202_p2_vs_pcot_with_ERE_plus_excited_state_intersection.png)
 ![First excited state for N202](figs/first_excited_state/N202_P011_plus_P111_1st_excited_state_spectra.png)
 
 
 # Finite volume potential
 
+In order to estimate the systematic uncertainties of finite volume and cutoff,  
+we use flavor SU(3) potential at $m_\pi = 837$ MeV with a lattice spacing 0.121 fm.
 ![Finite volume potential](figs/hal_pot_finite_volume/su3_mpi837MeV_1rep_pot.png)
 
+Here, we consider small boxes such as $L = 8, 12, 16$.
 ![Finite volume potential](figs/hal_pot_finite_volume/finite_volume_potential.png)
 
+The finite volume spectra at $L = 8$ and 12 show discrepancy.
+
 ![Finite volume potential](figs/hal_pot_finite_volume/su3_mpi837MeV_kcot_vs_k2_L_dep.png)
+![Finite volume potential](figs/hal_pot_finite_volume/su3_mpi837MeV_kcot_vs_k2_L_dep_L12_level_1.png)
 ![Finite volume potential](figs/hal_pot_finite_volume/su3_mpi837MeV_kcot_vs_k2_L_dep_neg.png)
 
 
-![Finite volume potential](figs/hal_pot_finite_volume/pot_in_coarse_lattice.png)
+Next, we consider cutoff dependence of the finite volume spectra.
+(Here, we assume the interpolated potential in a = 0.121 fm is consistent with the continuum limit.)
+
+![Finite volume potential](figs/hal_pot_finite_volume/mockup_potentials_in_various_lattice_spacing.png)
+![Finite volume potential](figs/hal_pot_finite_volume/mockup_potentials_r2_in_various_lattice_spacing.png)
+
+The spectra from coarse lattices show much deeper spectra, 
+while the spectra from much fine lattice than the original spacing
+only show small cutoff dependence.
+
 ![Finite volume potential](figs/hal_pot_finite_volume/kcot_vs_k2_lattice_spacing_dependence.png)
+
+
+The details of the convergence.
+
+![Finite volume potential](figs/hal_pot_finite_volume/k2mpi2_cut_off_dependence_orig_L24_level_0.png)
+![Finite volume potential](figs/hal_pot_finite_volume/k2mpi2_cut_off_dependence_orig_L24_level_1.png)
+![Finite volume potential](figs/hal_pot_finite_volume/k2mpi2_cut_off_dependence_orig_L36_level_0.png)
+![Finite volume potential](figs/hal_pot_finite_volume/k2mpi2_cut_off_dependence_orig_L36_level_1.png)
+![Finite volume potential](figs/hal_pot_finite_volume/k2mpi2_cut_off_dependence_orig_L48_level_0.png)
+![Finite volume potential](figs/hal_pot_finite_volume/k2mpi2_cut_off_dependence_orig_L48_level_1.png)
 
