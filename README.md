@@ -23,9 +23,7 @@ J. R. Green, A. D. Hanlon, P. M. Junnarkar, H. Wittig,  [arXiv:2103.01054](https
 # To Do List
 - [X] ERE fitting & binding energy
 - [X] Check imaginary (?) state P011, P111 first excited state versus ERE
-- [ ] Consistency check between root mean square distance of a shallow bound state and a finite volume box
-- [ ] Square well potential demo & finite volume method from eigenvalues
-- [ ] HAL potential inside a small box
+- [X] HAL potential inside a small box
 
 # Gauge configurations
 
@@ -183,7 +181,7 @@ The expected energy shifts from ERE are shown in down-triangle.
 
 # Finite volume potential
 
-In order to estimate the systematic uncertainties of finite volume and cutoff,  
+To estimate the systematic uncertainties of finite volume and cutoff,  
 we use flavor SU(3) potential at $m_\pi = 837$ MeV with a lattice spacing 0.121 fm.
 ![Finite volume potential](figs/hal_pot_finite_volume/su3_mpi837MeV_1rep_pot.png)
 
@@ -193,19 +191,22 @@ Here, we consider small boxes such as $L = 8, 12, 16$.
 The finite volume spectra at $L = 8$ and 12 show discrepancy.
 
 ![Finite volume potential](figs/hal_pot_finite_volume/su3_mpi837MeV_kcot_vs_k2_L_dep.png)
+![Finite volume potential](figs/hal_pot_finite_volume/su3_mpi837MeV_kcot_vs_k2_L_dep_L8_level_1.png)
 ![Finite volume potential](figs/hal_pot_finite_volume/su3_mpi837MeV_kcot_vs_k2_L_dep_L12_level_1.png)
+![Finite volume potential](figs/hal_pot_finite_volume/su3_mpi837MeV_kcot_vs_k2_L_dep_L16_level_1.png)
+![Finite volume potential](figs/hal_pot_finite_volume/su3_mpi837MeV_kcot_vs_k2_L_dep_L24_level_1.png)
+![Finite volume potential](figs/hal_pot_finite_volume/su3_mpi837MeV_kcot_vs_k2_L_dep_L32_level_1.png)
 ![Finite volume potential](figs/hal_pot_finite_volume/su3_mpi837MeV_kcot_vs_k2_L_dep_neg.png)
 
 
-Next, we consider cutoff dependence of the finite volume spectra.
+Next, we consider a cutoff dependence of the finite volume eigenvalues.
 (Here, we assume the interpolated potential in a = 0.121 fm is consistent with the continuum limit.)
 
 ![Finite volume potential](figs/hal_pot_finite_volume/mockup_potentials_in_various_lattice_spacing.png)
 ![Finite volume potential](figs/hal_pot_finite_volume/mockup_potentials_r2_in_various_lattice_spacing.png)
 
-The spectra from coarse lattices show much deeper spectra, 
-while the spectra from much fine lattice than the original spacing
-only show small cutoff dependence.
+The eigenvalue using coarse lattices are much deeper than the original ones,
+while the spectra using a much finer lattice than the one only show small cutoff dependence.
 
 ![Finite volume potential](figs/hal_pot_finite_volume/kcot_vs_k2_lattice_spacing_dependence.png)
 
