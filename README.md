@@ -60,7 +60,7 @@ Summary of binding energies and their cutoff/volume dependence.
 * These binding energies are obtained as follows.
 
 1. Calculate the scattering phase shifts $\delta$ of level = 0 states for P000, P001, P011, P111 and P002 frames with total spin-zero. The errors are estimated from 95CI of bootstrap samples.
-2. Fit these 5 points using NLO ERE (next leading order effective range expansion) with the finite volume formula constraints correctly.
+2. Fit these 5 points using NLO ERE (next leading order effective range expansion) with the finite volume formula constraints correctly. In some ensembles (H200, B450, and U103) P111 level is ignored due to tension between other levels.
 3. Measure the intersection between NLO ERE and binding state condition $-\sqrt{-k^2}$, which can be converted into the binding energy.
 4. Take continuum limit.
 
@@ -128,6 +128,8 @@ $r_\mathrm{eff}$: effective range
 
 ### ERE analysis
 
+Here, we ignore P111 from ERE fitting.
+
 ![B450 ensemble](figs/ERE/B450_ERE_parameter.png)
 ![B450 ensemble](figs/ERE/B450_pcot_vs_p2_ERE_fit.png)
 ![B450 ensemble](figs/ERE/B450_pcot_vs_p2_ERE_fit_neg.png)
@@ -151,6 +153,8 @@ $r_\mathrm{eff}$: effective range
 
 ### ERE analysis
 
+Here, we ignore P111 from ERE fitting.
+
 ![H200 ensemble](figs/ERE/H200_ERE_parameter.png)
 ![H200 ensemble](figs/ERE/H200_pcot_vs_p2_ERE_fit.png)
 ![H200 ensemble](figs/ERE/H200_pcot_vs_p2_ERE_fit_neg.png)
@@ -162,6 +166,8 @@ $r_\mathrm{eff}$: effective range
 ![U103 ensemble](figs/pcot_vs_p2/U103_pcot_vs_p2_neg.png)
 
 ### ERE analysis
+
+Here, we ignore P111 from ERE fitting.
 
 ![U103 ensemble](figs/ERE/U103_ERE_parameter.png)
 ![U103 ensemble](figs/ERE/U103_pcot_vs_p2_ERE_fit.png)
