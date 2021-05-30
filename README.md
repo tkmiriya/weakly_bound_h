@@ -9,11 +9,24 @@ J. R. Green, A. D. Hanlon, P. M. Junnarkar, H. Wittig,  [arXiv:2103.01054](https
 - [Gauge configurations](#gauge-configurations)
 - [Energy levels & $p\cot\delta$ vs $p^2$](#energy-levels--pcotdelta-vs-p2)
   - [Effective Range Expansion (ERE) analysis (NLO)](#effective-range-expansion-ere-analysis-nlo)
-  - [$L = 3.1$ fm](#l--31-fm)
-  - [$L = 2.8$ fm](#l--28-fm)
-  - [$L = 2.4$ fm](#l--24-fm)
-  - [$L = 2.1$ fm](#l--21-fm)
-  - [Nf = 2](#nf--2)
+  - [$L = 3.1$ fm N202 ensemble ($a = 0.0642$ fm)](#l--31-fm-n202-ensemble-a--00642-fm)
+    - [ERE analysis](#ere-analysis)
+  - [$L = 2.8$ fm H101 ensemble ($a = 0.0865$ fm)](#l--28-fm-h101-ensemble-a--00865-fm)
+    - [ERE analysis](#ere-analysis-1)
+  - [$L = 2.4$ fm N300 ensemble ($a = 0.0498$ fm)](#l--24-fm-n300-ensemble-a--00498-fm)
+    - [ERE analysis](#ere-analysis-2)
+  - [$L = 2.4$ fm B450 ensemble ($a = 0.0762$ fm)](#l--24-fm-b450-ensemble-a--00762-fm)
+    - [ERE analysis](#ere-analysis-3)
+  - [$L = 2.4$ fm A653 ensemble ($a = 0.0992$ fm)](#l--24-fm-a653-ensemble-a--00992-fm)
+    - [ERE analysis](#ere-analysis-4)
+  - [$L = 2.1$ fm H200 ensemble ($a = 0.0642$ fm)](#l--21-fm-h200-ensemble-a--00642-fm)
+    - [ERE analysis](#ere-analysis-5)
+  - [$L = 2.1$ fm U103 ensemble ($a = 0.0865$ fm)](#l--21-fm-u103-ensemble-a--00865-fm)
+    - [ERE analysis](#ere-analysis-6)
+  - [Nf = 2 E5 ensemble ($La = 2.1$ fm, $a = 0.0658$ fm, $m_\pi = 436$ MeV)](#nf--2-e5-ensemble-la--21-fm-a--00658-fm-m_pi--436-mev)
+    - [ERE analysis](#ere-analysis-7)
+  - [Nf = 2 E1 ensemble ($La = 2.1$ fm, $a = 0.0658$ fm, $m_\pi = 978$ MeV)](#nf--2-e1-ensemble-la--21-fm-a--00658-fm-m_pi--978-mev)
+    - [ERE analysis](#ere-analysis-8)
 - [Summary of phase shifts](#summary-of-phase-shifts)
   - [$La$ : fixed](#la--fixed)
   - [$a$ : fixed](#a--fixed)
@@ -73,80 +86,114 @@ $r_\mathrm{eff}$: effective range
 * For the fitting, we employ 5 data points ($n = 0$ level spectra for P000, P001, P011, P111, and P200 frames with total spin-zero.
 * We take into account the finite volume constraints correctly.
 
-## $L = 3.1$ fm
-* $a = 0.0642$ fm
+## $L = 3.1$ fm N202 ensemble ($a = 0.0642$ fm)
 
 ![N202 ensemble](figs/energy_levels/N202_spin_zero.png)
 ![N202 ensemble](figs/pcot_vs_p2/N202_pcot_vs_p2.png)
 ![N202 ensemble](figs/pcot_vs_p2/N202_pcot_vs_p2_neg.png)
+
+### ERE analysis
+
 ![N202 ensemble](figs/ERE/N202_ERE_parameter.png)
 ![N202 ensemble](figs/ERE/N202_pcot_vs_p2_ERE_fit.png)
 
-## $L = 2.8$ fm
-* $a = 0.0865$ fm
+## $L = 2.8$ fm H101 ensemble ($a = 0.0865$ fm)
 
 ![H101 ensemble](figs/energy_levels/H101_spin_zero.png)
 ![H101 ensemble](figs/pcot_vs_p2/H101_pcot_vs_p2.png)
 ![H101 ensemble](figs/pcot_vs_p2/H101_pcot_vs_p2_neg.png)
+
+### ERE analysis
+
 ![H101 ensemble](figs/ERE/H101_ERE_parameter.png)
 ![H101 ensemble](figs/ERE/H101_pcot_vs_p2_ERE_fit.png)
 
-## $L = 2.4$ fm
-* $a = 0.0498$ fm
+## $L = 2.4$ fm N300 ensemble ($a = 0.0498$ fm)
 
 ![N300 ensemble](figs/energy_levels/N300_spin_zero.png)
 ![N300 ensemble](figs/pcot_vs_p2/N300_pcot_vs_p2.png)
 ![N300 ensemble](figs/pcot_vs_p2/N300_pcot_vs_p2_neg.png)
+
+### ERE analysis
+
 ![N300 ensemble](figs/ERE/N300_ERE_parameter.png)
 ![N300 ensemble](figs/ERE/N300_pcot_vs_p2_ERE_fit.png)
 ![N300 ensemble](figs/ERE/N300_pcot_vs_p2_ERE_fit_neg.png)
 
-* $a = 0.0762$ fm
+## $L = 2.4$ fm B450 ensemble ($a = 0.0762$ fm)
 
 ![B450 ensemble](figs/energy_levels/B450_spin_zero.png)
 ![B450 ensemble](figs/pcot_vs_p2/B450_pcot_vs_p2.png)
 ![B450 ensemble](figs/pcot_vs_p2/B450_pcot_vs_p2_neg.png)
+
+### ERE analysis
+
 ![B450 ensemble](figs/ERE/B450_ERE_parameter.png)
 ![B450 ensemble](figs/ERE/B450_pcot_vs_p2_ERE_fit.png)
 ![B450 ensemble](figs/ERE/B450_pcot_vs_p2_ERE_fit_neg.png)
 
-* $a = 0.0992$ fm
+## $L = 2.4$ fm A653 ensemble ($a = 0.0992$ fm)
 
 ![A653 ensemble](figs/energy_levels/A653_spin_zero.png)
 ![A653 ensemble](figs/pcot_vs_p2/A653_pcot_vs_p2.png)
 ![A653 ensemble](figs/pcot_vs_p2/A653_pcot_vs_p2_neg.png)
+
+### ERE analysis
+
 ![A653 ensemble](figs/ERE/A653_ERE_parameter.png)
 ![A653 ensemble](figs/ERE/A653_pcot_vs_p2_ERE_fit.png)
 
-## $L = 2.1$ fm
-* $a = 0.0642$ fm
+## $L = 2.1$ fm H200 ensemble ($a = 0.0642$ fm)
 
 ![H200 ensemble](figs/energy_levels/H200_spin_zero.png)
 ![H200 ensemble](figs/pcot_vs_p2/H200_pcot_vs_p2.png)
 ![H200 ensemble](figs/pcot_vs_p2/H200_pcot_vs_p2_neg.png)
+
+### ERE analysis
+
 ![H200 ensemble](figs/ERE/H200_ERE_parameter.png)
 ![H200 ensemble](figs/ERE/H200_pcot_vs_p2_ERE_fit.png)
 ![H200 ensemble](figs/ERE/H200_pcot_vs_p2_ERE_fit_neg.png)
 
-* $a = 0.0865$ fm
+## $L = 2.1$ fm U103 ensemble ($a = 0.0865$ fm)
 
 ![U103 ensemble](figs/energy_levels/U103_spin_zero.png)
 ![U103 ensemble](figs/pcot_vs_p2/U103_pcot_vs_p2.png)
 ![U103 ensemble](figs/pcot_vs_p2/U103_pcot_vs_p2_neg.png)
+
+### ERE analysis
+
 ![U103 ensemble](figs/ERE/U103_ERE_parameter.png)
 ![U103 ensemble](figs/ERE/U103_pcot_vs_p2_ERE_fit.png)
 ![U103 ensemble](figs/ERE/U103_pcot_vs_p2_ERE_fit_neg.png)
 
-## Nf = 2
+## Nf = 2 E5 ensemble ($La = 2.1$ fm, $a = 0.0658$ fm, $m_\pi = 436$ MeV)
 
 ![E5 ensemble](figs/energy_levels/E5_spin_zero.png)
 ![E5 ensemble](figs/pcot_vs_p2/E5_pcot_vs_p2.png)
 ![E5 ensemble](figs/pcot_vs_p2/E5_pcot_vs_p2_neg.png)
 
+### ERE analysis 
+
+P011 & P111 1st excited states are ignored.
+
+![E5 ensemble](figs/ERE/E5_ERE_parameter.png)
+![E5 ensemble](figs/ERE/E5_pcot_vs_p2_ERE_fit.png)
+![E5 ensemble](figs/ERE/E5_pcot_vs_p2_ERE_fit_neg.png)
+
+## Nf = 2 E1 ensemble ($La = 2.1$ fm, $a = 0.0658$ fm, $m_\pi = 978$ MeV)
+
 ![E1 ensemble](figs/energy_levels/E1_spin_zero.png)
 ![E1 ensemble](figs/pcot_vs_p2/E1_pcot_vs_p2.png)
 ![E1 ensemble](figs/pcot_vs_p2/E1_pcot_vs_p2_neg.png)
 
+### ERE analysis 
+
+P011 & P111 1st excited states are ignored.
+
+![E1 ensemble](figs/ERE/E1_ERE_parameter.png)
+![E1 ensemble](figs/ERE/E1_pcot_vs_p2_ERE_fit.png)
+![E1 ensemble](figs/ERE/E1_pcot_vs_p2_ERE_fit_neg.png)
 
 # Summary of phase shifts
 
