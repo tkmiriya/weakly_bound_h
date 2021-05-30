@@ -78,7 +78,7 @@ class Luscher_zeta(object):
     def __init__(self, L, d = [0,0,0], Nmax=20, lcut=3):
         self.L = L
 
-        self.d = d
+        self.d = np.array(d)
         self.r_vec = np.array([[ix,iy,iz] for iz in range(-Nmax//2,Nmax//2)
             for iy in range(-Nmax//2,Nmax//2) for ix in range(-Nmax//2,Nmax//2)])
         self.lcut = lcut
@@ -110,16 +110,16 @@ class Luscher_zeta(object):
 
     def z00d(self, k2, gamma = 1.0, tmin = 0.0e0, tcut = 1.0e0, tmax = np.inf):
         q2 = k2 * self.L**2/((2.0*np.pi)**2)
-        
-        gv = np.array([gamma, 1.0, 1.0])
-        gvinv = np.array([1.0/gamma, 1.0, 1.0])
 
-        r2_list = np.sum(((self.r_vec[:,:] + 0.5*np.array(self.d))*gvinv)**2, axis=1)
+        gv = gamma * (self.d != 0) + 1 * (self.d == 0) 
+        gvinv = (1/gamma) * (self.d != 0) + 1 * (self.d == 0)
+
+        r2_list = np.sum(((self.r_vec[:,:] + 0.5*self.d)*gvinv)**2, axis=1)
         
         r2_small = r2_list[r2_list < self.lcut**2]
         r2_large = r2_list[r2_list >= self.lcut**2]
         
-        n2_list = np.sum(((self.r_vec[:,:] + 0.5*np.array(self.d))*gv)**2, axis=1)
+        n2_list = np.sum(((self.r_vec[:,:] + 0.5*self.d)*gv)**2, axis=1)
         n2_ne0   = n2_list[n2_list >= 1.0**2] 
         
         integ_I_low = lambda t, q2: 0.5*np.pi * gamma * (np.exp(t*q2) - 1.0)/(t**1.5) \
@@ -130,8 +130,8 @@ class Luscher_zeta(object):
                 * np.sum(np.exp((q2 - r2_large) * t)) - 0.5 * gamma * np.pi / (t**1.5)
 
                 
-        I_low, I_low_err = scipy.integrate.quad(integ_I_low,tmin,tcut,args=(q2))
-        I_high, I_high_err = scipy.integrate.quad(integ_I_high,tcut,tmax, args=(q2))
+        I_low, I_low_err = scipy.integrate.quad(integ_I_low, tmin, tcut,args=(q2))
+        I_high, I_high_err = scipy.integrate.quad(integ_I_high, tcut, tmax, args=(q2))
 
         z_0 = (1.0/np.sqrt(4.0*np.pi)) * np.sum(1.0/(r2_small - q2))
         
