@@ -30,7 +30,7 @@ J. R. Green, A. D. Hanlon, P. M. Junnarkar, H. Wittig,  [arXiv:2103.01054](https
 - [Summary of phase shifts](#summary-of-phase-shifts)
   - [$La$ : fixed](#la--fixed)
   - [$a$ : fixed](#a--fixed)
-- [First excited state consistency](#first-excited-state-consistency)
+- [First excited states for P011 and P111](#first-excited-states-for-p011-and-p111)
 - [Finite volume potential](#finite-volume-potential)
 
 # To Do List
@@ -217,20 +217,12 @@ P011 & P111 1st excited states are ignored.
 ![Fixed cutoff](figs/pcot_vs_p2/pcot_vs_p2_lat_spacing_00865fm.png)
 ![Fixed cutoff](figs/pcot_vs_p2/pcot_vs_p2_lat_spacing_00865fm_neg.png)
 
-
-# First excited state consistency
+# First excited states for P011 and P111
 
 ERE fitting using first excited states for P000 and P001, which works well.
 ![First excited state for N202](figs/first_excited_state/N202_p2_vs_pcot_with_ERE.png)
 ![First excited state for N202](figs/first_excited_state/N202_p2_vs_pcot_with_ERE_neg.png)
 ![First excited state for N202](figs/first_excited_state/N202_ERE_param_with_P000_1_P001_1.png)
-
-However, observed first excited states for P011 and P111 frames 
-show a large discrepancy between ERE. 
-The expected energy shifts from ERE are shown in down-triangle.
-![First excited state for N202](figs/first_excited_state/N202_p2_vs_pcot_with_ERE_plus_excited_state_intersection.png)
-![First excited state for N202](figs/first_excited_state/N202_P011_plus_P111_1st_excited_state_spectra.png)
-
 
 # Finite volume potential
 
