@@ -264,4 +264,3 @@ The details of the convergence.
 ![Finite volume potential](figs/hal_pot_finite_volume/k2mpi2_cut_off_dependence_orig_L36_level_1.png)
 ![Finite volume potential](figs/hal_pot_finite_volume/k2mpi2_cut_off_dependence_orig_L48_level_0.png)
 ![Finite volume potential](figs/hal_pot_finite_volume/k2mpi2_cut_off_dependence_orig_L48_level_1.png)
-
