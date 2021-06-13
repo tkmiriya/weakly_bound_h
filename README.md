@@ -32,6 +32,9 @@ J. R. Green, A. D. Hanlon, P. M. Junnarkar, H. Wittig,  [arXiv:2103.01054](https
   - [$a$ : fixed](#a--fixed)
 - [First excited states for P011 and P111](#first-excited-states-for-p011-and-p111)
 - [Finite volume potential](#finite-volume-potential)
+- [Finite volume method analysis in Fig. 5](#finite-volume-method-analysis-in-fig-5)
+  - [p cot delta vs p2](#p-cot-delta-vs-p2)
+  - [ERE parameters and binding energy at La ~ 2.4 fm ensembles](#ere-parameters-and-binding-energy-at-la--24-fm-ensembles)
 
 # To Do List
 - [X] ERE fitting & binding energy
@@ -264,3 +267,30 @@ The details of the convergence.
 ![Finite volume potential](figs/hal_pot_finite_volume/k2mpi2_cut_off_dependence_orig_L36_level_1.png)
 ![Finite volume potential](figs/hal_pot_finite_volume/k2mpi2_cut_off_dependence_orig_L48_level_0.png)
 ![Finite volume potential](figs/hal_pot_finite_volume/k2mpi2_cut_off_dependence_orig_L48_level_1.png)
+
+# Finite volume method analysis in Fig. 5
+
+Here, we just extract data in Fig. 5 (see notebook/Fig5_data.ipynb).
+
+## p cot delta vs p2
+![Fig.5 data](figs/FIG5_crosscheck/p2_vs_pcot_delta_in_Fig5.png)
+
+![Fig.5 data](figs/FIG5_crosscheck/p2_vs_pcot_delta_in_Fig5_excited_state.png)
+
+![Fig.5 data](figs/FIG5_crosscheck/p2_vs_pcot_delta_in_Fig5_gss.png)
+
+![Fig.5 data](figs/FIG5_crosscheck/p2_vs_pcot_delta_in_Fig5_ERE.png)
+
+
+## ERE parameters and binding energy at La ~ 2.4 fm ensembles
+
+![Fig.5 data](figs/FIG5_crosscheck/ERE_params_in_Fig5.png)
+
+![Fig.5 data](figs/FIG5_crosscheck/ERE_params_phys_scale_in_Fig5.png)
+
+![Fig.5 data](figs/FIG5_crosscheck/BE_a2_dep_in_Fig5.png)
+
+
+
+
+
