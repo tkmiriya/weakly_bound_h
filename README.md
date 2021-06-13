@@ -30,8 +30,11 @@ J. R. Green, A. D. Hanlon, P. M. Junnarkar, H. Wittig,  [arXiv:2103.01054](https
 - [Summary of phase shifts](#summary-of-phase-shifts)
   - [$La$ : fixed](#la--fixed)
   - [$a$ : fixed](#a--fixed)
-- [First excited state consistency](#first-excited-state-consistency)
+- [First excited states for P011 and P111](#first-excited-states-for-p011-and-p111)
 - [Finite volume potential](#finite-volume-potential)
+- [Finite volume method analysis in Fig. 5](#finite-volume-method-analysis-in-fig-5)
+  - [p cot delta vs p2](#p-cot-delta-vs-p2)
+  - [ERE parameters and binding energy at La ~ 2.4 fm ensembles](#ere-parameters-and-binding-energy-at-la--24-fm-ensembles)
 
 # To Do List
 - [X] ERE fitting & binding energy
@@ -217,20 +220,12 @@ P011 & P111 1st excited states are ignored.
 ![Fixed cutoff](figs/pcot_vs_p2/pcot_vs_p2_lat_spacing_00865fm.png)
 ![Fixed cutoff](figs/pcot_vs_p2/pcot_vs_p2_lat_spacing_00865fm_neg.png)
 
-
-# First excited state consistency
+# First excited states for P011 and P111
 
 ERE fitting using first excited states for P000 and P001, which works well.
 ![First excited state for N202](figs/first_excited_state/N202_p2_vs_pcot_with_ERE.png)
 ![First excited state for N202](figs/first_excited_state/N202_p2_vs_pcot_with_ERE_neg.png)
 ![First excited state for N202](figs/first_excited_state/N202_ERE_param_with_P000_1_P001_1.png)
-
-However, observed first excited states for P011 and P111 frames 
-show a large discrepancy between ERE. 
-The expected energy shifts from ERE are shown in down-triangle.
-![First excited state for N202](figs/first_excited_state/N202_p2_vs_pcot_with_ERE_plus_excited_state_intersection.png)
-![First excited state for N202](figs/first_excited_state/N202_P011_plus_P111_1st_excited_state_spectra.png)
-
 
 # Finite volume potential
 
@@ -272,4 +267,30 @@ The details of the convergence.
 ![Finite volume potential](figs/hal_pot_finite_volume/k2mpi2_cut_off_dependence_orig_L36_level_1.png)
 ![Finite volume potential](figs/hal_pot_finite_volume/k2mpi2_cut_off_dependence_orig_L48_level_0.png)
 ![Finite volume potential](figs/hal_pot_finite_volume/k2mpi2_cut_off_dependence_orig_L48_level_1.png)
+
+# Finite volume method analysis in Fig. 5
+
+Here, we just extract data in Fig. 5 (see notebook/Fig5_data.ipynb).
+
+## p cot delta vs p2
+![Fig.5 data](figs/FIG5_crosscheck/p2_vs_pcot_delta_in_Fig5.png)
+
+![Fig.5 data](figs/FIG5_crosscheck/p2_vs_pcot_delta_in_Fig5_excited_state.png)
+
+![Fig.5 data](figs/FIG5_crosscheck/p2_vs_pcot_delta_in_Fig5_gss.png)
+
+![Fig.5 data](figs/FIG5_crosscheck/p2_vs_pcot_delta_in_Fig5_ERE.png)
+
+
+## ERE parameters and binding energy at La ~ 2.4 fm ensembles
+
+![Fig.5 data](figs/FIG5_crosscheck/ERE_params_in_Fig5.png)
+
+![Fig.5 data](figs/FIG5_crosscheck/ERE_params_phys_scale_in_Fig5.png)
+
+![Fig.5 data](figs/FIG5_crosscheck/BE_a2_dep_in_Fig5.png)
+
+
+
+
 
